@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <!-- header -->
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./format.css" />
+
+    <title>TP2</title>
+  </head>
+
+  <!-- body -->
+
+  <body style="background-color: gray;">
+    <h1>Saisie d'une fiche "Personne"</h1>
+    <form BORDER="2" style="background-color: white;">
+      <table>
+        <tr>
+          <td><label for="nom"> Nom </label></td>
+          <td><input type="text" id="name" /></td>
+        </tr>
+        <tr>
+          <td><label for="prenom"> Prenom</label></td>
+          <td><input type="text" id="prenom" /></td>
+        </tr>
+
+        <tr>
+          <td><label for="ddn"> Date de naissance</label></td>
+          <td><input type="text" placeholder="JJ/MM/AAAA" /></td>
+        </tr>
+
+        <tr>
+          <td><label for="mail"> Mail </label></td>
+          <td><input type="text" /></td>
+        </tr>
+
+        <tr>
+          <td><label for="adresse"> Adresse</label></td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td></td>
+
+          <td>
+            <input onclick="myFunction()" type="button" value="Valider" />
+          </td>
+        </tr>
+      </table>
+    </form>
+    <div id="error"><p>Le Nom doit contenir au moins 5 catacteres</p></div>
+    <div id="resultat">
+      <p>BIENVENUE</p>
+    </div>
+    <script type="text/javascript" src="./format.js"></script>
+  </body>
+</html>
